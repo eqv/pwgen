@@ -1,7 +1,8 @@
 pwgen.rb
 =====
 
-A better pwgeneration / file checksuming tool that uses the xkcd algorithm to create highly secure and memorable passwords. It can also be used to memorize fingerprints of arbitrary files (e.g gpg public keys) by generating passwords from the file.
+A better pwgeneration / file checksuming tool that uses the xkcd algorithm to create highly secure and memorable passwords. 
+It can be used to generate random passwords, generate multiple passwords for different accounts/usecases from the same master password, to compare files by means of their fingerprint and to memorize fingerprints of arbitrary files (e.g gpg public keys) by generating passwords from the file. 
 
 Usecases
 ========
