@@ -63,7 +63,7 @@ words = File.read(options[:wordlist]).lines.to_a
 if options[:static] && !options[:password]
   puts "Please enter your master password:"
   options[:password] = STDIN.noecho(&:gets).strip
-  puts "Thank you, I will no generate a password for the usecase #{options[:salt].inspect}"
+  puts "Thank you, I will now generate a password for the usecase #{options[:salt].inspect}"
 end
 
 iterations = 100000 # we want many iterations as to prevent bruteforce attempts
@@ -72,7 +72,7 @@ bits_entropy = options[:bits_entropy] + words.length.to_s(2).length
 #generate the hexstring of a 64 byte random value (either deterministically or from secure_random)
 if options[:static]
   seed = OpenSSL::PKCS5.pbkdf2_hmac_sha1(options[:password], options[:salt], iterations, 64).bytes.map{|x| x.to_s(16).rjust(2,"0")}.join
-else 
+else
   seed = SecureRandom.hex(64)
 end
 
