@@ -1,7 +1,7 @@
 pwgen.rb
 =====
 
-A better pwgeneration / file checksuming tool that uses the xkcd algorithm to create higly secure and memorable passwords
+A better pwgeneration / file checksuming tool that uses the xkcd algorithm to create highly secure and memorable passwords. It can also be used to memorize fingerprints of arbitrary files (e.g gpg public keys) by generating passwords from the file.
 
 Usecases
 ========
@@ -21,7 +21,7 @@ ruby pwgen.rb -ds "some_mail@some_provi.der"
 #ReestablishedOurselfMultipliedAlignmentsAleph8
 ```
 
-*Compare a file (in this case pwgen.rb itself) with someone else
+*To compare a file (in this case pwgen.rb itself) with someone else, generate a passphrase from it and read it aloud instead of the original hex fingerprint (This should be as secure as a full SHA256 fingerprint comparison).
 
 ```bash
 ruby pwgen.rb -df pwgen.rb
@@ -32,4 +32,4 @@ License
 =======
 The wordlist.txt is from here: http://www.keithv.com/software/wlist/
 
-This projekt is released under GPL v2
+This project is released under GPL v2
