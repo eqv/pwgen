@@ -31,4 +31,5 @@ ruby pwgen.rb -df pwgen.rb
 License
 =======
 The wordlist.txt is from here: http://www.keithv.com/software/wlist/
+
 This projekt is released under GPL v2
