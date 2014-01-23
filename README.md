@@ -6,7 +6,7 @@ A better pwgeneration / file checksuming tool that uses the xkcd algorithm to cr
 Usecases
 ========
 
-*Generate a new random password and copy it to the clipboard
+*Generate a new random password and copy it to the clipboard (this requires xclip to be installed)
 
 ```bash
 ruby pwgen.rb
