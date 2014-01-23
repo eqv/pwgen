@@ -12,7 +12,7 @@ Usecases
 ruby pwgen.rb
 ```
 
-*Generate a new static password from a master password and a usecase/account and print it
+*Generate a new static password from a master password and a usecase/account and print it, note that this takes a while to prevent master password bruteforcing.
 
 ```bash
 ruby pwgen.rb -ds "some_mail@some_provi.der"
