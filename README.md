@@ -18,7 +18,7 @@ ruby pwgen.rb
 ```bash
 ruby pwgen.rb -ds "some_mail@some_provi.der"
 #Please enter your master password:
-#Thank you, I will no generate a password for the usecase "some_mail@some_provi.der"
+#Thank you, I will now generate a password for the usecase "some_mail@some_provi.der"
 #ReestablishedOurselfMultipliedAlignmentsAleph8
 ```
 
